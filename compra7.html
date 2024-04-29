@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vinicius Ribeiro" />
+    
+    <link rel="stylesheet" href="./assets/style/header.css" />
+    <link rel="stylesheet" href="./assets/style/compra.css" />
+    <link rel="stylesheet" href="./assets/style/nav.css" />
+    <link rel="stylesheet" href="./assets/style/product.css" />
+    <link rel="stylesheet" href="./assets/style/info.css" />
+    <link rel="stylesheet" href="./assets/style/about.css" />
+    <link rel="stylesheet" href="./assets/style/footer.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>Games.dev</title>
+    <style>
+        .Jogo1 {
+            display: flex; /* Torna a div um container flexível */
+            align-items: center; /* Alinha os itens verticalmente no centro */
+        }
+
+        /* Estilos para a imagem dentro da div */
+        .Jogo1 img {
+            width: 50%; /* Ajusta a largura da imagem para ocupar 100% da largura da div */
+            height: auto; /* Mantém a proporção original da imagem */
+            display: block; /* Remove espaços em branco extras abaixo da imagem */
+        }
+
+        /* Estilos para a div de informações à direita */
+        .Jogo1 .Info {
+            margin-left: 20px; /* Adiciona um espaçamento à esquerda */
+        }
+
+        /* Estilos para o texto dentro da div de informações */
+        .Jogo1 .Info h2 {
+            margin-bottom: 20px;
+            color: #333; /* Adiciona cor ao texto, se necessário */
+        }
+        .Jogo1 .Info p {
+            margin: 0;
+            color: #000000;
+            font-family: sans-serif;
+        }
+        .botao-compra {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #000080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 20px; /* Adiciona espaço acima do botão */
+            padding: 10px 15px;
+        }
+
+        .botao-compra:hover {
+            background-color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div class="headerRow">
+                <!-- Whatsapp -->
+                <section class="whatsapp">
+                    <span class="icon">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </span>
+                    <a href="">
+                        <span>Fale pelo whatsapp</span>
+                    </a>
+                </section>
+                <!-- FAQ -->
+                <section class="faq">
+                    <span class="icon">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    </span>
+                    <a href="">
+                        <span>Tire suas dúvidas</span>
+                    </a>
+                </section>
+                <!-- Search -->
+                <div id="search-container">
+                    <section class="search">
+                        <button class="buttonSearch">
+                            <span class="icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>                            
+                        </button>
+                        <input type="search" name="search" id="searchInput" class="searchInput" placeholder="Pesquisar..." >
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <div id="container">
+            <div class="headerRow">
+                <!-- Logo -->
+                <section class="logo">
+                    <a href="index.html">
+                        <h1 class="font">Games</h1>
+                        <p class="font">.dev</p>
+                    </a>
+                </section>
+                <!-- Menu -->
+                <section class="menu">
+                    <a href="">
+                        <ul>
+                            <li class="font">Loja</li>
+                            <li class="font">Sobre</li>
+                            <li class="font">FAQ</li>
+                            <li class="font">Contato</li>
+                        </ul>
+                    </a>
+                </section>
+                <div class="headerRowTwo">
+                    <!-- Social Media -->
+                    <section class="socialMedia">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/games/instantgames/">
+                            <span class="iconSocial">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </span>
+                        <a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/vxnx.ri/">
+                            <span class="iconSocial">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <!-- Pinterest -->
+                        <a href="https://br.pinterest.com/search/pins/?q=video%20game&rs=typed">
+                            <span class="iconSocial">
+                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <!-- Bag -->
+                        <a href="">
+                            <span class="iconSocial">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="Jogo1">
+            <img src="./assets/image/celeste.jpg" alt="CAPA Celeste" />
+            <div class="Info">
+                <h2>
+                    <center>Descrição do Produto:</center>
+                </h2>
+                
+                <p>
+                    Ajude Madeline a enfrentar seus demônios internos em sua jornada até o topo da Montanha Celeste nesse jogo de plataforma superafiado dos criadores de TowerFall.
+                </p>
+                <center><a href="carrinho7.html" class="botao-compra">Comprar Agora</a></center>
+            </div>
+
+        </div>
+</head>
+<body>
+    
+</body>
+</html>
